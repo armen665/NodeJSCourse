@@ -1,0 +1,60 @@
+.chatPage {
+    min-height: 100vh;
+    padding: 50px 30px 70px 30px;
+}
+.chatPage form {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.chatPage form input {
+    border: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 15px;
+    display: block;
+    width: 100%;
+    outline: none;
+}
+.chatPage form button {
+    display: block;
+    padding: 8px 25px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px ;
+}
+.chatPage form button:disabled {
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+    cursor: not-allowed;
+}
+.chatPage .message h5 {
+    font-size: 16px;
+    margin: 0;
+}
+.chatPage .message .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+.chatPage .message .date {
+    font-size: 14px;
+    line-height: 18px;
+}
+.chatPage .message p {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    border-bottom: 1px solid #eeeeee;
+}
