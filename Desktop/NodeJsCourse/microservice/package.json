@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd api && npm run start\" \"cd app && npm run start\" \"cd socket && npm run start\"",
+    "start": "concurrently \"cd api && npm run start\" \"cd app && npm run start\" \"cd socket && npm run start\" \"cd db && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

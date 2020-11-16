@@ -16,9 +16,11 @@ function App() {
         <Switch>
             <Route path="/signup" component={SignUp}/>
             <UserContext.Provider value={{currentUser, setCurrentUser}}>
-                <Route path="/signin" component={SignIn}/>
-                <Route path="/" exact component={Chat}/>
-                <Route component={NotFound}/>
+                <Switch>
+                    <Route path="/signin" component={SignIn}/>
+                    <Route path="/" exact component={Chat}/>
+                    <Route path="/" component={NotFound}/>
+                </Switch>
             </UserContext.Provider>
         </Switch>
     </div>
